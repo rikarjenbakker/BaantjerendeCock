@@ -351,6 +351,10 @@ a {
   /* overflow: hidden; */
 }
 
+.linkjehehehe {
+  color: #ec1c24;
+}
+
 @media only screen and (max-width: 2750px){
   html {
     font-size: 21px;
@@ -498,7 +502,6 @@ a {
     min-height: 75vh;
     max-height: 90vh;
     position: absolute;
-    z-index: ;
     bottom: 0;
     right: 0;
   }

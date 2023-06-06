@@ -34,9 +34,7 @@
           $products = $dbStatement->fetchAll(PDO::FETCH_ASSOC);
         ?>
 
-        <!-- hier komt de php code met alle producten -->
         <?php foreach($products as $product): ?>
-  	        <!-- <a onclick="productPage(<?= $product['ID']?>)" href="product.php" class="product-cell"> -->
             <a id="product" href="product.php?product_id=<?= $product['id'] ?>" class="product-cell">
               <p class="product-title">
                 <?= $product['Title'] ?>
@@ -50,7 +48,6 @@
         <?php endforeach; ?>
 
           <div class="footer">
-            <!-- dit is er voor ruimte tussen de cellen en de onderkant van het scherm, dit wou niet lukken met een padding/margin:( -->
           </div>
 
       </div>

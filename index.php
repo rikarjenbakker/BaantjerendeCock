@@ -12,45 +12,7 @@
   <link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
-  <div class="menu-left">
-    <a href="index.php">
-      <img class="img-menu-left" src="img/Baantjer_en_de_cock.png" alt="logo">
-    </a>
-    <div class="menu-options">
-      <a class="menu-item" href="index.php">
-        <div> 
-          Alle Boeken
-        </div>
-      </a>
-      <a class="menu-item" href="paperback.php">
-        <div>
-          Paperback
-        </div>
-      </a>
-      <a class="menu-item" href="omnibus.php">
-        <div>
-          Omnibus
-        </div>
-      </a>
-      <a class="menu-item" href="inkoop.php">
-        <div>
-          Inkoop
-        </div>
-      </a>
-      <a class="menu-item" href="winkelwagen.php">
-        <div>
-          Winkelwagen
-        </div>
-      </a>
-    </div>
-    <div class="credit">
-      <div class="credit-text">
-        Created by 
-        <a href="https://rikarjenbakker.nl/" target="_blank">
-          Rik Arjen Bakker
-        </a>
-      </div>
-    </div>
+  <?php include 'menu.php' ?>
   </div>
   <div>
     <div class="header">
@@ -74,7 +36,8 @@
 
         <!-- hier komt de php code met alle producten -->
         <?php foreach($products as $product): ?>
-  	        <a onclick="productPage(<?= $product['ID']?>)" href="product.php" class="product-cell">
+  	        <!-- <a id="product" onclick="productPage(<?= $product['id']?>)" href="product.php" class="product-cell"> -->
+  	        <a id="product" href="product.php?product_id=<?= $product['id'] ?>" class="product-cell">
               <p class="product-title">
                 <?= $product['Title'] ?>
               </p>
