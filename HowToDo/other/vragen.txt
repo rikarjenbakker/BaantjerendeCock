@@ -1,0 +1,7 @@
+in register.php op regel 23 waar staat Database::query voor en waarom werk het niet (ook in login.php regel 24 & 6)
+
+register.php en login.php regel 3, welke naam heeft mijn database?
+
+error in tutorial.php 
+
+  in IM07 in logout.php hoe ziet de functie logout eruit? 

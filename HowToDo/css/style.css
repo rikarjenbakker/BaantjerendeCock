@@ -1,0 +1,582 @@
+*, *::before, *::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #fff8e3;
+  color: #444444;
+}
+
+.menu-top {
+  display: flex;
+  background-color: #ff6236;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+.menu-top__logo {
+  width: 8.25rem;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.25rem;
+}
+
+.menu-top__logo img {
+  border-radius:1px;
+  width: 100%;
+}
+
+.menu-top__search-bar{
+  width: 50vw;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3ea;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+.menu-top__search-bar div {
+  width: 85%;
+  padding: 0.5rem;
+}
+
+.menu-top__search-bar img{
+  width: 2rem;
+  margin-right: 0.2rem;
+}
+
+.menu-top__buttons--parant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11rem;
+  margin-right: 4rem;
+  background-color: #ff6236;
+}
+
+.menu-top__buttons--1 {
+  display: flex;
+  text-decoration: none;
+  color: #444444;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  padding: 0.75rem 0;
+  background-color: #f3f3ea;
+  border-radius: 5px;
+}
+
+.menu-top__buttons--2 {
+  display: flex;
+  text-decoration: none;
+  color: #444444;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f3f3ea;
+  border-radius: 5px;
+}
+
+.menu-top__buttons--3 {
+  display: flex;
+  text-decoration: none;
+  color: #444444;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f3f3ea;
+  border-radius: 5px;
+}
+
+.tutorial-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28%;
+  height: 62.5%;
+  background-color: #ff6236;
+  position: relative;
+  margin: 2rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+}
+
+.tutorial-item__img {
+  display: inline-flex;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 70%;
+  align-self: flex-start;
+  border-radius: 5px;
+}
+
+.tutorial-item__title {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  position: absolute;
+  left: 5%;
+  height: 15%;
+  width: 90%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f3f3ea;
+}
+
+.tutorial-page {
+  width: 95vw;
+  height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 2.5vw
+}
+
+.tutorial-page__title {
+  width: 100%;
+  height: auto;
+  background-color: #ff6236;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  border: solid 2px #444444;
+}
+
+.tutorial-page__description {
+  width: 95%;
+  height: auto;
+  background-color: #f3f3ea;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+  border: solid 1px #444444;
+}
+
+.tutorial-page__steps {
+  width: 95%;
+  background-color: #fff8e3;
+  display: inline-flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap; 
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+  
+}
+
+.tutorial-page__steps__step {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.tutorial-page__comments {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #f3f3ea;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.tutorial-page__comments__comment{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  background-color: #f3f3ea;;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.tutorial-page__comments__comment--username {
+  width: 12%;
+  padding: 0 0.5rem;
+}
+
+.tutorial-page__comments__comment--text {
+  width: 88%;
+}
+
+.tutorial-page__comments__comment--rating {
+  padding-left: 1rem;
+}
+
+.tutorial-page__comments__reaction {
+  width: 100%;
+  background-color: #f3f3ea;;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+  margin-left: 10%;
+}
+
+.tutorial-page__comments__reaction--username {
+  width: 100%;
+}
+
+.tutorial-page__comments__reaction--text {
+  padding: 0.5rem 1.5rem;
+}
+
+.login-card {
+  width: 55vw;
+  height: 50vh;
+  margin: 15vh 22.5vw;
+  background-color: #f3f3ea;
+  border-radius: 5px;
+  border: solid 1px #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #ff6236;
+  width: 20%;
+  border: solid 1px #444444;
+  margin: 2rem; 
+  font-size: 8rem;
+  border-radius: 5px;
+  margin-top: -6rem;
+}
+
+.login-card__text {
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  margin-left: 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login-card__text--email {
+  width: 60%;
+  text-align: center;
+  margin: 1rem; 
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+  background-color: #fff8e3;
+}
+
+.login-card__text--password {
+  width: 60%;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+  background-color: #fff8e3;
+}
+
+.login-card__text-button__div {
+  width: 60%;
+  text-align: right;
+  margin: 1rem;
+}
+
+.login-card__text-button__button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+  background-color: #ff6236;
+}
+
+.profile-card {
+  width: 55vw;
+  height: 50vh;
+  margin: 15vh 22.5vw;
+  background-color: #f3f3ea;
+  border-radius: 5px;
+  border: solid 1px #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #ff6236;
+  width: 20%;
+  border: solid 1px #444444;
+  margin: -6rem 2rem 2rem 2rem; 
+  font-size: 8rem;
+  border-radius: 5px;
+}
+
+.profile-card__text {
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.profile-card__text--email {
+  width: 20rem;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff8e3;
+}
+
+.profile-card__text--password {
+  width: 20rem;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff8e3;
+}
+
+.profile-card__text--name {
+  width: 20rem;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff8e3;
+}
+
+.profile-card__text--username {
+  width: 20rem;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff8e3;
+  padding-bottom: 1.5rem;
+}
+
+.profile-card__description {
+  display: flex;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+  background-color: #fff8e3;
+  border-radius: 5px;
+  width: 80%;
+  height: 8rem;
+}
+
+.registration-card {
+  width: 55vw;
+  height: 50vh;
+  margin: 15vh 22.5vw;
+  background-color: #f3f3ea;
+  border-radius: 5px;
+  border: solid 1px #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #ff6236;
+  width: 20%;
+  border: solid 1px #444444;
+  margin: -6rem 2rem 2rem 2rem; 
+  font-size: 8rem;
+  border-radius: 5px;
+}
+
+.registration-card__img :hover {
+  cursor: pointer;
+}
+
+.registration-card__img__text {
+  display: none;
+}
+
+.registration-card__img__text :hover {
+  display: block;
+  font-size: 1rem;
+}
+
+.registration-card__info {
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  padding-left: 8rem;
+  align-items: start;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.registration-card__info--email {
+  width: 55%;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff8e3;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+  cursor: pointer;
+}
+
+.registration-card__info--password {
+  width: 55%;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff8e3;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+  cursor: pointer;
+}
+
+
+.registration-card__info--username {
+  width: 55%;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff8e3;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+  cursor: pointer;
+}
+
+.registration-card__info--button-div {
+  width: 100%;
+  height: 2.5rem;
+  text-align: right;
+}
+
+.registration-card__info--button-div__button {
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  padding: ;
+  border-radius: 5px;
+  background-color: #ff6236;
+  margin: 1rem;
+  border-radius: 5px;
+  border: solid 2px #444444;
+  cursor: pointer;
+}
+
+.saved-page{
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.saved-page__text {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.saved-page__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 25rem;
+  background-color: #ff6236;
+  position: relative;
+  margin: 5%;
+  border-radius: 5px;
+  border: solid 2px #444444;
+}
+
+.saved-page__item__img {
+  display: inline-flex;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 70%;
+  align-self: flex-start;
+  border-radius: 5px;
+}
+
+.saved-page__item__title {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  position: absolute;
+  left: 5%;
+  height: 15%;
+  width: 90%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f3f3ea;
+}
+
+.tutorial-item__title {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  position: absolute;
+  display: flex;
+  left: 5%;
+  height: 15%;
+  width: 90%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f3f3ea;
+}
+
+.tutorial-item__title p {
+  width: 85%;
+  height: 100%;
+  padding: auto;
+  align-self: center;
+}
+
+.tutorial-item__title i {
+  width: 15%;
+  height: 3rem;
+  padding: 0.5rem 0.25rem;
+  text-align: center;
+  font-size: 2.5rem;
+  align-self: flex-start;
+}
