@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ToDo - Home</title>
+
+  <link rel="stylesheet" href="1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="img\fav.png">
+</head>
+<body>
+  <div style="max-width: 400px;" class="container-lg p-0 mt-5">
+    <div class="bg-primary">
+      <div style="z-index: 2;" class="bg-secondary d-flex justify-content-between">
+        <div class="float-start p-1">
+          Project ToDo
+        </div>
+      </div>
+      
+      <div class="d-flex justify-content-between">
+        <div class="p-1 text-info">
+          Dit zijn uw taken:
+          <!-- hier wil ik eventueel later nog de username en tijd/dag tonen -->
+        </div>
+        <a class="m-2 align-middle bg-info" style="height: 29px; width: 24px;" href="settings.php">
+          <img src="img/free-settings-icon-3110-thumb.png" style="width: 24px;" alt="">
+        </a>
+      </div>
+
+      <div class="row d-flex justify-content-center my-3 mb-4">
+        <div class="bg-secondary text-info card mx-2 mb-2 col-8">
+          <div class="row">
+            <a style="text-decoration: none; color: #ffffff;" class="col-2 d-flex align-items-center">
+              <i id="addButton"  class="las la-plus-circle" style="font-size: 1.5rem;"></i>
+              <!-- door hier te klikken word te text vanuit de onderstaande input tag toegevoegd aan de database -->
+            </a>
+            <form method="post" action="" style="margin: none; padding: none;" class="col-9 opacity-75 p-1">
+              <input id="newToDo" placeholder="Nieuwe ToDo toevoegen" value="">
+              <!-- hier kan je de text invoeren voor een nieuwe todo -->
+            </form>
+            </input>
+          </div>
+        </div>
+        <div class="card mb-2 col-2 d-flex bg-secondary align-items-center justify-content-center text-info">
+          <input style="text-decoration: none; color: #ffffff; font-size: 55%;" type="date" class=" opacity-75 p-1 col-12" id="datepicker">
+          <!-- hier kan je de datum selecteren voor wanneer de taak klaar moet zijn -->
+          <!-- deze functionaliteit is echter nog niet aanwezig -->
+        </input>
+        </div>
+      </div>
+
+      <div id="section">
+        <!-- hier komen alle nog niet afgeronden todo's  -->
+      </div>
+
+      <div id="done-section">
+        <!-- hier komen alle afgeronde todo's -->
+      </div> 
+
+    </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
